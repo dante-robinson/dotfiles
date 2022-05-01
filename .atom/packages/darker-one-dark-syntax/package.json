@@ -1,0 +1,54 @@
+{
+  "_from": "https://www.atom.io/api/packages/darker-one-dark-syntax/versions/1.1.0/tarball",
+  "_id": "darker-one-dark-syntax@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-OXKA1baEMvLBEl7egGzBnk7hEjY1+rqmxhNLZhTaAPOkdqhj9gIhh25QYpYjWgdMN0tCXmHASzov0qViE+kH8g==",
+  "_location": "/darker-one-dark-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/darker-one-dark-syntax/versions/1.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/darker-one-dark-syntax/versions/1.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/darker-one-dark-syntax/versions/1.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/darker-one-dark-syntax/versions/1.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/darker-one-dark-syntax/versions/1.1.0/tarball",
+  "_shasum": "aea1bf7deefbcd26541662dc08eb4d956be177f8",
+  "_spec": "https://www.atom.io/api/packages/darker-one-dark-syntax/versions/1.1.0/tarball",
+  "_where": "/tmp/apm-install-dir-2022010-11316-19a5jjz.kxfki",
+  "bugs": {
+    "url": "https://github.com/SenTisso/darker-one-dark-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "This is just edited one-dark theme, its just darker and colors are more colorful.",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/SenTisso/darker-one-dark-syntax#readme",
+  "keywords": [
+    "dark",
+    "syntax"
+  ],
+  "name": "darker-one-dark-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SenTisso/darker-one-dark-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.1.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

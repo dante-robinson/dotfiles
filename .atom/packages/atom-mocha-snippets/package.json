@@ -1,0 +1,102 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-mocha-snippets/versions/0.8.0/tarball",
+  "_id": "atom-mocha-snippets@0.8.0",
+  "_inBundle": false,
+  "_integrity": "sha512-XfYJxzTVdQ78HHviamuywvwlk/DT/G6RLAtdXkZDfy8AN7rcBlqcFisjIbtlF7VFIWeVtcIXDo/zO6eruVDalg==",
+  "_location": "/atom-mocha-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-mocha-snippets/versions/0.8.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-mocha-snippets/versions/0.8.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-mocha-snippets/versions/0.8.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-mocha-snippets/versions/0.8.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-mocha-snippets/versions/0.8.0/tarball",
+  "_shasum": "3310c3e58e643bf6ce01f8c65d7b9fe23c69fb58",
+  "_spec": "https://www.atom.io/api/packages/atom-mocha-snippets/versions/0.8.0/tarball",
+  "_where": "/tmp/apm-install-dir-2021119-648825-1csnshc.5llc",
+  "bugs": {
+    "url": "https://github.com/linesmerrill/atom-mocha-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "plugins": {
+      "type": "object",
+      "properties": {}
+    },
+    "toggleSemicolons": {
+      "type": "boolean",
+      "default": true,
+      "description": "When enabled adds semicolons to the end of the expressions"
+    },
+    "toggleDoubleQuotes": {
+      "type": "boolean",
+      "default": false,
+      "description": "When enabled changes the default quotes to double quotes (i.e. \")"
+    }
+  },
+  "dependencies": {
+    "mustache": "^2.3.0"
+  },
+  "deprecated": false,
+  "description": "Snippets for the Javascript/Typescript BDD framework Mocha: https://mochajs.org/. It works based on language detection, ES5 for JavaScript language and ES6 for Babel-JavaScript language",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/linesmerrill/atom-mocha-snippets#readme",
+  "keywords": [
+    "mocha",
+    "javascript",
+    "bdd",
+    "snippets",
+    "tdd",
+    "chai",
+    "typescript"
+  ],
+  "license": "MIT",
+  "main": "./lib/atom-mocha-snippets",
+  "name": "atom-mocha-snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linesmerrill/atom-mocha-snippets.git"
+  },
+  "version": "0.8.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "mustache",
+        "version": "2.3.2",
+        "path": "node_modules/mustache/mustache.js"
+      }
+    ],
+    "extensions": {
+      ".js": [
+        "lib/atom-mocha-snippets.js",
+        "lib/generate-snippets.js",
+        "node_modules/mustache/mustache.js",
+        "node_modules/mustache/mustache.min.js"
+      ],
+      ".json": [
+        "node_modules/mustache/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          ""
+        ],
+        "dependencies": {
+          "mustache": "^2.3.0"
+        }
+      }
+    ]
+  }
+}

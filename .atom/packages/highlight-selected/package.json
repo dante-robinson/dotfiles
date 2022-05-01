@@ -1,0 +1,237 @@
+{
+  "_from": "https://www.atom.io/api/packages/highlight-selected/versions/0.17.0/tarball",
+  "_id": "highlight-selected@0.17.0",
+  "_inBundle": false,
+  "_integrity": "sha512-faDT7mf+gZoTYDdf6C4ri10bUWuy66tGw+AC0DLfUIUkxVco8pFefqrfxVheRse3WeU+744l2um9o+YiSlKJlg==",
+  "_location": "/highlight-selected",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/highlight-selected/versions/0.17.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/highlight-selected/versions/0.17.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/highlight-selected/versions/0.17.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/highlight-selected/versions/0.17.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/highlight-selected/versions/0.17.0/tarball",
+  "_shasum": "35fc149e1bf8097bdee90913faccd100100ef159",
+  "_spec": "https://www.atom.io/api/packages/highlight-selected/versions/0.17.0/tarball",
+  "_where": "/tmp/apm-install-dir-20211119-1886187-mw47qb.8dif",
+  "bugs": {
+    "url": "https://github.com/richrace/highlight-selected/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    },
+    "scroll-marker": {
+      "versions": {
+        "0.1.0": "consumeScrollMarker"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^5.0.0",
+    "debounce": "^1.2.0",
+    "grim": "^2.0.2"
+  },
+  "deprecated": false,
+  "description": "Highlights the current word selected when double clicking",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.3"
+  },
+  "dist": {
+    "shasum": "7c9da46b1412aceb069f8ca2ca54d014986ad408"
+  },
+  "engines": {
+    "atom": ">=1.13.0 <2.0.0"
+  },
+  "homepage": "https://github.com/richrace/highlight-selected",
+  "keywords": [
+    "highlight selected",
+    "highlight selection",
+    "highlight occurrences"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "highlight-selected",
+  "package-deps": [
+    "scroll-marker"
+  ],
+  "providedServices": {
+    "highlightSelected": {
+      "description": "Exposes Highlight Selected Events",
+      "versions": {
+        "1.0.0": "provideHighlightSelectedV1Deprecated",
+        "2.0.0": "provideHighlightSelectedV2"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richrace/highlight-selected.git"
+  },
+  "scripts": {
+    "check": "npm run lint && npm run test",
+    "lint": "eslint lib spec",
+    "test": "atom --test spec"
+  },
+  "version": "0.17.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "atom-package-deps",
+        "version": "5.1.0",
+        "path": "node_modules/atom-package-deps/lib/index.js"
+      },
+      {
+        "name": "debounce",
+        "version": "1.2.1",
+        "path": "node_modules/debounce/index.js"
+      },
+      {
+        "name": "event-kit",
+        "version": "2.5.3",
+        "path": "node_modules/event-kit/dist/event-kit.js"
+      },
+      {
+        "name": "grim",
+        "version": "2.0.3",
+        "path": "node_modules/grim/lib/grim.js"
+      },
+      {
+        "name": "is-utf8",
+        "version": "0.2.1",
+        "path": "node_modules/is-utf8/is-utf8.js"
+      },
+      {
+        "name": "sb-fs",
+        "version": "4.0.0",
+        "path": "node_modules/sb-fs/lib/index.js"
+      },
+      {
+        "name": "semver",
+        "version": "6.3.0",
+        "path": "node_modules/semver/semver.js"
+      },
+      {
+        "name": "strip-bom-buf",
+        "version": "1.0.0",
+        "path": "node_modules/strip-bom-buf/index.js"
+      }
+    ],
+    "extensions": {
+      ".json": [
+        ".eslintrc.json",
+        "node_modules/atom-package-deps/.eslintrc.json",
+        "node_modules/atom-package-deps/package.json",
+        "node_modules/debounce/component.json",
+        "node_modules/debounce/package.json",
+        "node_modules/event-kit/api.json",
+        "node_modules/event-kit/package.json",
+        "node_modules/grim/package.json",
+        "node_modules/is-utf8/package.json",
+        "node_modules/sb-fs/package.json",
+        "node_modules/semver/package.json",
+        "node_modules/strip-bom-buf/package.json",
+        "package.json"
+      ],
+      ".js": [
+        "lib/main.js",
+        "lib/scroll-markers/scroll-markers-service.js",
+        "lib/search-model.js",
+        "lib/selection-manager.js",
+        "lib/status-bar/status-bar-service.js",
+        "lib/status-bar/status-bar-view.js",
+        "lib/utils/editor-finders.js",
+        "lib/utils/escape-reg-exp.js",
+        "lib/utils/is-word-selected.js",
+        "lib/utils/non-word-characters.js",
+        "node_modules/atom-package-deps/lib/helpers.js",
+        "node_modules/atom-package-deps/lib/index.js",
+        "node_modules/atom-package-deps/lib/types.js",
+        "node_modules/atom-package-deps/lib/view.js",
+        "node_modules/debounce/index.js",
+        "node_modules/debounce/test.js",
+        "node_modules/event-kit/dist/composite-disposable.js",
+        "node_modules/event-kit/dist/disposable.js",
+        "node_modules/event-kit/dist/emitter.js",
+        "node_modules/event-kit/dist/event-kit.js",
+        "node_modules/grim/lib/deprecation.js",
+        "node_modules/grim/lib/grim.js",
+        "node_modules/is-utf8/is-utf8.js",
+        "node_modules/sb-fs/lib/index.js",
+        "node_modules/semver/bin/semver.js",
+        "node_modules/semver/semver.js",
+        "node_modules/strip-bom-buf/index.js"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "",
+          "keymaps",
+          "lib",
+          "lib/scroll-markers",
+          "lib/status-bar",
+          "lib/utils",
+          "menus"
+        ],
+        "dependencies": {
+          "atom-package-deps": "^5.0.0",
+          "debounce": "^1.2.0",
+          "grim": "^2.0.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/atom-package-deps",
+          "node_modules/atom-package-deps/lib"
+        ],
+        "dependencies": {
+          "sb-fs": "^4.0.0",
+          "semver": "^6.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/grim/lib",
+          "node_modules/grim"
+        ],
+        "dependencies": {
+          "event-kit": "^2.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/sb-fs/lib",
+          "node_modules/sb-fs"
+        ],
+        "dependencies": {
+          "strip-bom-buf": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/strip-bom-buf"
+        ],
+        "dependencies": {
+          "is-utf8": "^0.2.1"
+        }
+      }
+    ]
+  }
+}

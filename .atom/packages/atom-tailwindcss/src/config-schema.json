@@ -1,0 +1,10 @@
+{
+  "isDisabledIfNotInPackageJson": {
+    "title": "Only autocomplete if Tailwind CSS is found in your project's dependencies",
+    "description":
+      "Only activate if `tailwindcss` is in your project's `<root>/package.json` (dependencies or devDependencies).",
+    "type": "boolean",
+    "default": true,
+    "order": 1
+  }
+}

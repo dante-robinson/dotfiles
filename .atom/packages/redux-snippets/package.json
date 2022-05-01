@@ -1,0 +1,63 @@
+{
+  "_from": "https://www.atom.io/api/packages/redux-snippets/versions/0.2.2/tarball",
+  "_id": "redux-snippets@0.2.2",
+  "_inBundle": false,
+  "_integrity": "sha512-2yeBksotHuzcL3ceTYDSyB1A/httvI3LVQ0g/z6Rr+mP/9D1rydYubJhV999hR3d2RHnqXZXHG6dGy+6yEZjBw==",
+  "_location": "/redux-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/redux-snippets/versions/0.2.2/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/redux-snippets/versions/0.2.2/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/redux-snippets/versions/0.2.2/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/redux-snippets/versions/0.2.2/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/redux-snippets/versions/0.2.2/tarball",
+  "_shasum": "58b58e600fbfda6b5467ec19a3926e88a609a076",
+  "_spec": "https://www.atom.io/api/packages/redux-snippets/versions/0.2.2/tarball",
+  "_where": "/tmp/apm-install-dir-20211119-1883648-1rufxln.9m0b",
+  "author": {
+    "name": "Jhen",
+    "email": "developer@jhen.me"
+  },
+  "bugs": {
+    "url": "https://github.com/jhen0409/atom-redux-snippets.git/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Atom Snippets for Redux",
+  "engines": {
+    "atom": ">0.174.0"
+  },
+  "homepage": "https://github.com/jhen0409/atom-redux-snippets.git",
+  "keywords": [
+    "react",
+    "redux",
+    "snippets",
+    "es6",
+    "babel",
+    "coffeescript",
+    "livescript"
+  ],
+  "license": "MIT",
+  "name": "redux-snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhen0409/atom-redux-snippets.git"
+  },
+  "version": "0.2.2",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

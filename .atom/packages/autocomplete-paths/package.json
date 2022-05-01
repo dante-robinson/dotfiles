@@ -1,0 +1,1213 @@
+{
+  "_from": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.17.0/tarball",
+  "_id": "autocomplete-paths@2.17.0",
+  "_inBundle": false,
+  "_integrity": "sha512-V/xiqLilYHDOoXfmGyJK0CwyNIhTeM3pieOQwcn02y0qLRKUMskLZnGN7iZIET9l9kottbzLFoJ1q3EZHJHJlA==",
+  "_location": "/autocomplete-paths",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.17.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.17.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.17.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.17.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.17.0/tarball",
+  "_shasum": "42916445ad75f3d95e4ae06ec27aeb49c67b6499",
+  "_spec": "https://www.atom.io/api/packages/autocomplete-paths/versions/2.17.0/tarball",
+  "_where": "/tmp/apm-install-dir-2022012-1313792-1uv6khy.xr1s",
+  "atomTestRunner": "./spec/runner.js",
+  "bugs": {
+    "url": "https://github.com/atom-community/autocomplete-paths/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  },
+  "dependencies": {
+    "chokidar": "^3.5.2",
+    "fast-glob": "^3.2.7",
+    "globify-gitignore": "^0.2.1",
+    "minimatch": "^3.0.4",
+    "slash": "^4.0.0",
+    "underscore": "^1.13.1",
+    "zadeh": "^2.1.0"
+  },
+  "deprecated": false,
+  "description": "Adds path autocompletion to autocomplete+",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@types/atom": "^1.40.11",
+    "@types/is-valid-path": "^0.1.0",
+    "@types/minimatch": "^3.0.5",
+    "@types/node": "^12",
+    "@types/underscore": "^1.11.3",
+    "atom-jasmine3-test-runner": "^5.2.9",
+    "babel-preset-atomic": "^4.2.1",
+    "build-commit": "0.1.4",
+    "cross-env": "7.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-atomic": "^1.16.5",
+    "parcel": "^2.0.1",
+    "prettier-config-atomic": "^3.0.1",
+    "shx": "0.3.3"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/atom-community/autocomplete-paths#readme",
+  "license": "MIT",
+  "main": "./dist/autocomplete-paths.js",
+  "name": "autocomplete-paths",
+  "prettier": "prettier-config-atomic",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-community/autocomplete-paths.git"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production parcel build --target main lib/autocomplete-paths.js",
+    "build-commit": "build-commit -o dist",
+    "clean": "shx rm -rf dist .parcel-cache",
+    "dev": "cross-env NODE_ENV=development parcel watch --target main lib/autocomplete-paths.js",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix",
+    "prepare": "npm run build",
+    "test": "atom --test ./spec",
+    "test.format": "prettier . --check",
+    "test.lint": "eslint ."
+  },
+  "targets": {
+    "main": {
+      "context": "electron-renderer",
+      "engines": {
+        "electron": ">=5.x"
+      },
+      "includeNodeModules": {
+        "atom": false,
+        "zadeh": false,
+        "fsevents": false
+      },
+      "outputFormat": "commonjs",
+      "isLibrary": true
+    }
+  },
+  "version": "2.17.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "anymatch",
+        "version": "3.1.2",
+        "path": "node_modules/anymatch/index.js"
+      },
+      {
+        "name": "balanced-match",
+        "version": "1.0.2",
+        "path": "node_modules/balanced-match/index.js"
+      },
+      {
+        "name": "binary-extensions",
+        "version": "2.2.0",
+        "path": "node_modules/binary-extensions/index.js"
+      },
+      {
+        "name": "bindings",
+        "version": "1.5.0",
+        "path": "node_modules/bindings/bindings.js"
+      },
+      {
+        "name": "brace-expansion",
+        "version": "1.1.11",
+        "path": "node_modules/brace-expansion/index.js"
+      },
+      {
+        "name": "braces",
+        "version": "3.0.2",
+        "path": "node_modules/braces/index.js"
+      },
+      {
+        "name": "chokidar",
+        "version": "3.5.2",
+        "path": "node_modules/chokidar/index.js"
+      },
+      {
+        "name": "concat-map",
+        "version": "0.0.1",
+        "path": "node_modules/concat-map/index.js"
+      },
+      {
+        "name": "dedent",
+        "version": "0.7.0",
+        "path": "node_modules/dedent/dist/dedent.js"
+      },
+      {
+        "name": "fast-glob",
+        "version": "3.2.10",
+        "path": "node_modules/fast-glob/out/index.js"
+      },
+      {
+        "name": "fastq",
+        "version": "1.13.0",
+        "path": "node_modules/fastq/queue.js"
+      },
+      {
+        "name": "file-uri-to-path",
+        "version": "1.0.0",
+        "path": "node_modules/file-uri-to-path/index.js"
+      },
+      {
+        "name": "fill-range",
+        "version": "7.0.1",
+        "path": "node_modules/fill-range/index.js"
+      },
+      {
+        "name": "glob-parent",
+        "version": "5.1.2",
+        "path": "node_modules/glob-parent/index.js"
+      },
+      {
+        "name": "globify-gitignore",
+        "version": "0.2.1",
+        "path": "node_modules/globify-gitignore/dist/main.js"
+      },
+      {
+        "name": "is-binary-path",
+        "version": "2.1.0",
+        "path": "node_modules/is-binary-path/index.js"
+      },
+      {
+        "name": "is-extglob",
+        "version": "2.1.1",
+        "path": "node_modules/is-extglob/index.js"
+      },
+      {
+        "name": "is-glob",
+        "version": "4.0.3",
+        "path": "node_modules/is-glob/index.js"
+      },
+      {
+        "name": "is-invalid-path",
+        "version": "0.1.0",
+        "path": "node_modules/is-invalid-path/index.js"
+      },
+      {
+        "name": "is-extglob",
+        "version": "1.0.0",
+        "path": "node_modules/is-invalid-path/node_modules/is-extglob/index.js"
+      },
+      {
+        "name": "is-glob",
+        "version": "2.0.1",
+        "path": "node_modules/is-invalid-path/node_modules/is-glob/index.js"
+      },
+      {
+        "name": "is-number",
+        "version": "7.0.0",
+        "path": "node_modules/is-number/index.js"
+      },
+      {
+        "name": "is-valid-path",
+        "version": "0.1.1",
+        "path": "node_modules/is-valid-path/index.js"
+      },
+      {
+        "name": "merge2",
+        "version": "1.4.1",
+        "path": "node_modules/merge2/index.js"
+      },
+      {
+        "name": "micromatch",
+        "version": "4.0.4",
+        "path": "node_modules/micromatch/index.js"
+      },
+      {
+        "name": "minimatch",
+        "version": "3.0.4",
+        "path": "node_modules/minimatch/minimatch.js"
+      },
+      {
+        "name": "node-addon-api",
+        "version": "3.1.0",
+        "path": "node_modules/node-addon-api/index.js"
+      },
+      {
+        "name": "node-gyp-build",
+        "version": "4.3.0",
+        "path": "node_modules/node-gyp-build/index.js"
+      },
+      {
+        "name": "normalize-path",
+        "version": "3.0.0",
+        "path": "node_modules/normalize-path/index.js"
+      },
+      {
+        "name": "picomatch",
+        "version": "2.3.1",
+        "path": "node_modules/picomatch/index.js"
+      },
+      {
+        "name": "queue-microtask",
+        "version": "1.2.3",
+        "path": "node_modules/queue-microtask/index.js"
+      },
+      {
+        "name": "readdirp",
+        "version": "3.6.0",
+        "path": "node_modules/readdirp/index.js"
+      },
+      {
+        "name": "reusify",
+        "version": "1.0.4",
+        "path": "node_modules/reusify/reusify.js"
+      },
+      {
+        "name": "run-parallel",
+        "version": "1.2.0",
+        "path": "node_modules/run-parallel/index.js"
+      },
+      {
+        "name": "slash",
+        "version": "4.0.0",
+        "path": "node_modules/slash/index.js"
+      },
+      {
+        "name": "to-regex-range",
+        "version": "5.0.1",
+        "path": "node_modules/to-regex-range/index.js"
+      },
+      {
+        "name": "underscore",
+        "version": "1.13.2",
+        "path": "node_modules/underscore/underscore-umd.js"
+      },
+      {
+        "name": "zadeh",
+        "version": "2.1.0",
+        "path": "node_modules/zadeh/index.js"
+      }
+    ],
+    "extensions": {
+      ".json": [
+        ".eslintrc.json",
+        "babel.config.json",
+        "node_modules/@nodelib/fs.scandir/package.json",
+        "node_modules/@nodelib/fs.stat/package.json",
+        "node_modules/@nodelib/fs.walk/package.json",
+        "node_modules/anymatch/package.json",
+        "node_modules/balanced-match/package.json",
+        "node_modules/binary-extensions/binary-extensions.json",
+        "node_modules/binary-extensions/package.json",
+        "node_modules/bindings/package.json",
+        "node_modules/brace-expansion/package.json",
+        "node_modules/braces/package.json",
+        "node_modules/chokidar/package.json",
+        "node_modules/concat-map/package.json",
+        "node_modules/dedent/package.json",
+        "node_modules/fast-glob/package.json",
+        "node_modules/fastq/package.json",
+        "node_modules/file-uri-to-path/package.json",
+        "node_modules/fill-range/package.json",
+        "node_modules/glob-parent/package.json",
+        "node_modules/globify-gitignore/package.json",
+        "node_modules/globify-gitignore/src/tsconfig.json",
+        "node_modules/is-binary-path/package.json",
+        "node_modules/is-extglob/package.json",
+        "node_modules/is-glob/package.json",
+        "node_modules/is-invalid-path/node_modules/is-extglob/package.json",
+        "node_modules/is-invalid-path/node_modules/is-glob/package.json",
+        "node_modules/is-invalid-path/package.json",
+        "node_modules/is-number/package.json",
+        "node_modules/is-valid-path/package.json",
+        "node_modules/merge2/package.json",
+        "node_modules/micromatch/package.json",
+        "node_modules/minimatch/package.json",
+        "node_modules/node-addon-api/package-support.json",
+        "node_modules/node-addon-api/package.json",
+        "node_modules/node-gyp-build/package.json",
+        "node_modules/normalize-path/package.json",
+        "node_modules/picomatch/package.json",
+        "node_modules/queue-microtask/package.json",
+        "node_modules/readdirp/package.json",
+        "node_modules/reusify/package.json",
+        "node_modules/run-parallel/package.json",
+        "node_modules/slash/package.json",
+        "node_modules/to-regex-range/package.json",
+        "node_modules/underscore/modules/package.json",
+        "node_modules/underscore/package.json",
+        "node_modules/zadeh/package.json",
+        "node_modules/zadeh/src/binding/tsconfig.json",
+        "package.json"
+      ],
+      ".js": [
+        "lib/autocomplete-paths.js",
+        "lib/config/default-scopes.js",
+        "lib/config/index.js",
+        "lib/config/option-scopes.js",
+        "lib/paths-cache.js",
+        "lib/paths-provider.js",
+        "lib/utils.js",
+        "node_modules/@nodelib/fs.scandir/out/adapters/fs.js",
+        "node_modules/@nodelib/fs.scandir/out/constants.js",
+        "node_modules/@nodelib/fs.scandir/out/index.js",
+        "node_modules/@nodelib/fs.scandir/out/providers/async.js",
+        "node_modules/@nodelib/fs.scandir/out/providers/common.js",
+        "node_modules/@nodelib/fs.scandir/out/providers/sync.js",
+        "node_modules/@nodelib/fs.scandir/out/settings.js",
+        "node_modules/@nodelib/fs.scandir/out/types/index.js",
+        "node_modules/@nodelib/fs.scandir/out/utils/fs.js",
+        "node_modules/@nodelib/fs.scandir/out/utils/index.js",
+        "node_modules/@nodelib/fs.stat/out/adapters/fs.js",
+        "node_modules/@nodelib/fs.stat/out/index.js",
+        "node_modules/@nodelib/fs.stat/out/providers/async.js",
+        "node_modules/@nodelib/fs.stat/out/providers/sync.js",
+        "node_modules/@nodelib/fs.stat/out/settings.js",
+        "node_modules/@nodelib/fs.stat/out/types/index.js",
+        "node_modules/@nodelib/fs.walk/out/index.js",
+        "node_modules/@nodelib/fs.walk/out/providers/async.js",
+        "node_modules/@nodelib/fs.walk/out/providers/index.js",
+        "node_modules/@nodelib/fs.walk/out/providers/stream.js",
+        "node_modules/@nodelib/fs.walk/out/providers/sync.js",
+        "node_modules/@nodelib/fs.walk/out/readers/async.js",
+        "node_modules/@nodelib/fs.walk/out/readers/common.js",
+        "node_modules/@nodelib/fs.walk/out/readers/reader.js",
+        "node_modules/@nodelib/fs.walk/out/readers/sync.js",
+        "node_modules/@nodelib/fs.walk/out/settings.js",
+        "node_modules/@nodelib/fs.walk/out/types/index.js",
+        "node_modules/anymatch/index.js",
+        "node_modules/balanced-match/index.js",
+        "node_modules/binary-extensions/index.js",
+        "node_modules/bindings/bindings.js",
+        "node_modules/brace-expansion/index.js",
+        "node_modules/braces/index.js",
+        "node_modules/braces/lib/compile.js",
+        "node_modules/braces/lib/constants.js",
+        "node_modules/braces/lib/expand.js",
+        "node_modules/braces/lib/parse.js",
+        "node_modules/braces/lib/stringify.js",
+        "node_modules/braces/lib/utils.js",
+        "node_modules/chokidar/index.js",
+        "node_modules/chokidar/lib/constants.js",
+        "node_modules/chokidar/lib/fsevents-handler.js",
+        "node_modules/chokidar/lib/nodefs-handler.js",
+        "node_modules/concat-map/example/map.js",
+        "node_modules/concat-map/index.js",
+        "node_modules/dedent/dist/dedent.js",
+        "node_modules/fast-glob/out/index.js",
+        "node_modules/fast-glob/out/managers/patterns.js",
+        "node_modules/fast-glob/out/managers/tasks.js",
+        "node_modules/fast-glob/out/providers/async.js",
+        "node_modules/fast-glob/out/providers/filters/deep.js",
+        "node_modules/fast-glob/out/providers/filters/entry.js",
+        "node_modules/fast-glob/out/providers/filters/error.js",
+        "node_modules/fast-glob/out/providers/matchers/matcher.js",
+        "node_modules/fast-glob/out/providers/matchers/partial.js",
+        "node_modules/fast-glob/out/providers/provider.js",
+        "node_modules/fast-glob/out/providers/stream.js",
+        "node_modules/fast-glob/out/providers/sync.js",
+        "node_modules/fast-glob/out/providers/transformers/entry.js",
+        "node_modules/fast-glob/out/readers/reader.js",
+        "node_modules/fast-glob/out/readers/stream.js",
+        "node_modules/fast-glob/out/readers/sync.js",
+        "node_modules/fast-glob/out/settings.js",
+        "node_modules/fast-glob/out/types/index.js",
+        "node_modules/fast-glob/out/utils/array.js",
+        "node_modules/fast-glob/out/utils/errno.js",
+        "node_modules/fast-glob/out/utils/fs.js",
+        "node_modules/fast-glob/out/utils/index.js",
+        "node_modules/fast-glob/out/utils/path.js",
+        "node_modules/fast-glob/out/utils/pattern.js",
+        "node_modules/fast-glob/out/utils/stream.js",
+        "node_modules/fast-glob/out/utils/string.js",
+        "node_modules/fastq/bench.js",
+        "node_modules/fastq/example.js",
+        "node_modules/fastq/queue.js",
+        "node_modules/file-uri-to-path/index.js",
+        "node_modules/fill-range/index.js",
+        "node_modules/glob-parent/index.js",
+        "node_modules/globify-gitignore/dist/main.js",
+        "node_modules/is-binary-path/index.js",
+        "node_modules/is-extglob/index.js",
+        "node_modules/is-glob/index.js",
+        "node_modules/is-invalid-path/index.js",
+        "node_modules/is-invalid-path/node_modules/is-extglob/index.js",
+        "node_modules/is-invalid-path/node_modules/is-glob/index.js",
+        "node_modules/is-number/index.js",
+        "node_modules/is-valid-path/index.js",
+        "node_modules/is-valid-path/test.js",
+        "node_modules/merge2/index.js",
+        "node_modules/micromatch/index.js",
+        "node_modules/minimatch/minimatch.js",
+        "node_modules/node-addon-api/benchmark/function_args.js",
+        "node_modules/node-addon-api/benchmark/index.js",
+        "node_modules/node-addon-api/benchmark/property_descriptor.js",
+        "node_modules/node-addon-api/index.js",
+        "node_modules/node-addon-api/tools/check-napi.js",
+        "node_modules/node-addon-api/tools/clang-format.js",
+        "node_modules/node-addon-api/tools/conversion.js",
+        "node_modules/node-gyp-build/bin.js",
+        "node_modules/node-gyp-build/build-test.js",
+        "node_modules/node-gyp-build/index.js",
+        "node_modules/node-gyp-build/optional.js",
+        "node_modules/normalize-path/index.js",
+        "node_modules/picomatch/index.js",
+        "node_modules/picomatch/lib/constants.js",
+        "node_modules/picomatch/lib/parse.js",
+        "node_modules/picomatch/lib/picomatch.js",
+        "node_modules/picomatch/lib/scan.js",
+        "node_modules/picomatch/lib/utils.js",
+        "node_modules/queue-microtask/index.js",
+        "node_modules/readdirp/index.js",
+        "node_modules/reusify/benchmarks/createNoCodeFunction.js",
+        "node_modules/reusify/benchmarks/fib.js",
+        "node_modules/reusify/benchmarks/reuseNoCodeFunction.js",
+        "node_modules/reusify/reusify.js",
+        "node_modules/reusify/test.js",
+        "node_modules/run-parallel/index.js",
+        "node_modules/slash/index.js",
+        "node_modules/to-regex-range/index.js",
+        "node_modules/underscore/amd/_baseCreate.js",
+        "node_modules/underscore/amd/_baseIteratee.js",
+        "node_modules/underscore/amd/_cb.js",
+        "node_modules/underscore/amd/_chainResult.js",
+        "node_modules/underscore/amd/_collectNonEnumProps.js",
+        "node_modules/underscore/amd/_createAssigner.js",
+        "node_modules/underscore/amd/_createEscaper.js",
+        "node_modules/underscore/amd/_createIndexFinder.js",
+        "node_modules/underscore/amd/_createPredicateIndexFinder.js",
+        "node_modules/underscore/amd/_createReduce.js",
+        "node_modules/underscore/amd/_createSizePropertyCheck.js",
+        "node_modules/underscore/amd/_deepGet.js",
+        "node_modules/underscore/amd/_escapeMap.js",
+        "node_modules/underscore/amd/_executeBound.js",
+        "node_modules/underscore/amd/_flatten.js",
+        "node_modules/underscore/amd/_getByteLength.js",
+        "node_modules/underscore/amd/_getLength.js",
+        "node_modules/underscore/amd/_group.js",
+        "node_modules/underscore/amd/_has.js",
+        "node_modules/underscore/amd/_hasObjectTag.js",
+        "node_modules/underscore/amd/_isArrayLike.js",
+        "node_modules/underscore/amd/_isBufferLike.js",
+        "node_modules/underscore/amd/_keyInObj.js",
+        "node_modules/underscore/amd/_methodFingerprint.js",
+        "node_modules/underscore/amd/_optimizeCb.js",
+        "node_modules/underscore/amd/_setup.js",
+        "node_modules/underscore/amd/_shallowProperty.js",
+        "node_modules/underscore/amd/_stringTagBug.js",
+        "node_modules/underscore/amd/_tagTester.js",
+        "node_modules/underscore/amd/_toBufferView.js",
+        "node_modules/underscore/amd/_toPath.js",
+        "node_modules/underscore/amd/_unescapeMap.js",
+        "node_modules/underscore/amd/after.js",
+        "node_modules/underscore/amd/allKeys.js",
+        "node_modules/underscore/amd/before.js",
+        "node_modules/underscore/amd/bind.js",
+        "node_modules/underscore/amd/bindAll.js",
+        "node_modules/underscore/amd/chain.js",
+        "node_modules/underscore/amd/chunk.js",
+        "node_modules/underscore/amd/clone.js",
+        "node_modules/underscore/amd/compact.js",
+        "node_modules/underscore/amd/compose.js",
+        "node_modules/underscore/amd/constant.js",
+        "node_modules/underscore/amd/contains.js",
+        "node_modules/underscore/amd/countBy.js",
+        "node_modules/underscore/amd/create.js",
+        "node_modules/underscore/amd/debounce.js",
+        "node_modules/underscore/amd/defaults.js",
+        "node_modules/underscore/amd/defer.js",
+        "node_modules/underscore/amd/delay.js",
+        "node_modules/underscore/amd/difference.js",
+        "node_modules/underscore/amd/each.js",
+        "node_modules/underscore/amd/escape.js",
+        "node_modules/underscore/amd/every.js",
+        "node_modules/underscore/amd/extend.js",
+        "node_modules/underscore/amd/extendOwn.js",
+        "node_modules/underscore/amd/filter.js",
+        "node_modules/underscore/amd/find.js",
+        "node_modules/underscore/amd/findIndex.js",
+        "node_modules/underscore/amd/findKey.js",
+        "node_modules/underscore/amd/findLastIndex.js",
+        "node_modules/underscore/amd/findWhere.js",
+        "node_modules/underscore/amd/first.js",
+        "node_modules/underscore/amd/flatten.js",
+        "node_modules/underscore/amd/functions.js",
+        "node_modules/underscore/amd/get.js",
+        "node_modules/underscore/amd/groupBy.js",
+        "node_modules/underscore/amd/has.js",
+        "node_modules/underscore/amd/identity.js",
+        "node_modules/underscore/amd/index-default.js",
+        "node_modules/underscore/amd/index.js",
+        "node_modules/underscore/amd/indexBy.js",
+        "node_modules/underscore/amd/indexOf.js",
+        "node_modules/underscore/amd/initial.js",
+        "node_modules/underscore/amd/intersection.js",
+        "node_modules/underscore/amd/invert.js",
+        "node_modules/underscore/amd/invoke.js",
+        "node_modules/underscore/amd/isArguments.js",
+        "node_modules/underscore/amd/isArray.js",
+        "node_modules/underscore/amd/isArrayBuffer.js",
+        "node_modules/underscore/amd/isBoolean.js",
+        "node_modules/underscore/amd/isDataView.js",
+        "node_modules/underscore/amd/isDate.js",
+        "node_modules/underscore/amd/isElement.js",
+        "node_modules/underscore/amd/isEmpty.js",
+        "node_modules/underscore/amd/isEqual.js",
+        "node_modules/underscore/amd/isError.js",
+        "node_modules/underscore/amd/isFinite.js",
+        "node_modules/underscore/amd/isFunction.js",
+        "node_modules/underscore/amd/isMap.js",
+        "node_modules/underscore/amd/isMatch.js",
+        "node_modules/underscore/amd/isNaN.js",
+        "node_modules/underscore/amd/isNull.js",
+        "node_modules/underscore/amd/isNumber.js",
+        "node_modules/underscore/amd/isObject.js",
+        "node_modules/underscore/amd/isRegExp.js",
+        "node_modules/underscore/amd/isSet.js",
+        "node_modules/underscore/amd/isString.js",
+        "node_modules/underscore/amd/isSymbol.js",
+        "node_modules/underscore/amd/isTypedArray.js",
+        "node_modules/underscore/amd/isUndefined.js",
+        "node_modules/underscore/amd/isWeakMap.js",
+        "node_modules/underscore/amd/isWeakSet.js",
+        "node_modules/underscore/amd/iteratee.js",
+        "node_modules/underscore/amd/keys.js",
+        "node_modules/underscore/amd/last.js",
+        "node_modules/underscore/amd/lastIndexOf.js",
+        "node_modules/underscore/amd/map.js",
+        "node_modules/underscore/amd/mapObject.js",
+        "node_modules/underscore/amd/matcher.js",
+        "node_modules/underscore/amd/max.js",
+        "node_modules/underscore/amd/memoize.js",
+        "node_modules/underscore/amd/min.js",
+        "node_modules/underscore/amd/mixin.js",
+        "node_modules/underscore/amd/negate.js",
+        "node_modules/underscore/amd/noop.js",
+        "node_modules/underscore/amd/now.js",
+        "node_modules/underscore/amd/object.js",
+        "node_modules/underscore/amd/omit.js",
+        "node_modules/underscore/amd/once.js",
+        "node_modules/underscore/amd/pairs.js",
+        "node_modules/underscore/amd/partial.js",
+        "node_modules/underscore/amd/partition.js",
+        "node_modules/underscore/amd/pick.js",
+        "node_modules/underscore/amd/pluck.js",
+        "node_modules/underscore/amd/property.js",
+        "node_modules/underscore/amd/propertyOf.js",
+        "node_modules/underscore/amd/random.js",
+        "node_modules/underscore/amd/range.js",
+        "node_modules/underscore/amd/reduce.js",
+        "node_modules/underscore/amd/reduceRight.js",
+        "node_modules/underscore/amd/reject.js",
+        "node_modules/underscore/amd/rest.js",
+        "node_modules/underscore/amd/restArguments.js",
+        "node_modules/underscore/amd/result.js",
+        "node_modules/underscore/amd/sample.js",
+        "node_modules/underscore/amd/shuffle.js",
+        "node_modules/underscore/amd/size.js",
+        "node_modules/underscore/amd/some.js",
+        "node_modules/underscore/amd/sortBy.js",
+        "node_modules/underscore/amd/sortedIndex.js",
+        "node_modules/underscore/amd/tap.js",
+        "node_modules/underscore/amd/template.js",
+        "node_modules/underscore/amd/templateSettings.js",
+        "node_modules/underscore/amd/throttle.js",
+        "node_modules/underscore/amd/times.js",
+        "node_modules/underscore/amd/toArray.js",
+        "node_modules/underscore/amd/toPath.js",
+        "node_modules/underscore/amd/underscore-array-methods.js",
+        "node_modules/underscore/amd/underscore.js",
+        "node_modules/underscore/amd/unescape.js",
+        "node_modules/underscore/amd/union.js",
+        "node_modules/underscore/amd/uniq.js",
+        "node_modules/underscore/amd/uniqueId.js",
+        "node_modules/underscore/amd/unzip.js",
+        "node_modules/underscore/amd/values.js",
+        "node_modules/underscore/amd/where.js",
+        "node_modules/underscore/amd/without.js",
+        "node_modules/underscore/amd/wrap.js",
+        "node_modules/underscore/amd/zip.js",
+        "node_modules/underscore/cjs/_baseCreate.js",
+        "node_modules/underscore/cjs/_baseIteratee.js",
+        "node_modules/underscore/cjs/_cb.js",
+        "node_modules/underscore/cjs/_chainResult.js",
+        "node_modules/underscore/cjs/_collectNonEnumProps.js",
+        "node_modules/underscore/cjs/_createAssigner.js",
+        "node_modules/underscore/cjs/_createEscaper.js",
+        "node_modules/underscore/cjs/_createIndexFinder.js",
+        "node_modules/underscore/cjs/_createPredicateIndexFinder.js",
+        "node_modules/underscore/cjs/_createReduce.js",
+        "node_modules/underscore/cjs/_createSizePropertyCheck.js",
+        "node_modules/underscore/cjs/_deepGet.js",
+        "node_modules/underscore/cjs/_escapeMap.js",
+        "node_modules/underscore/cjs/_executeBound.js",
+        "node_modules/underscore/cjs/_flatten.js",
+        "node_modules/underscore/cjs/_getByteLength.js",
+        "node_modules/underscore/cjs/_getLength.js",
+        "node_modules/underscore/cjs/_group.js",
+        "node_modules/underscore/cjs/_has.js",
+        "node_modules/underscore/cjs/_hasObjectTag.js",
+        "node_modules/underscore/cjs/_isArrayLike.js",
+        "node_modules/underscore/cjs/_isBufferLike.js",
+        "node_modules/underscore/cjs/_keyInObj.js",
+        "node_modules/underscore/cjs/_methodFingerprint.js",
+        "node_modules/underscore/cjs/_optimizeCb.js",
+        "node_modules/underscore/cjs/_setup.js",
+        "node_modules/underscore/cjs/_shallowProperty.js",
+        "node_modules/underscore/cjs/_stringTagBug.js",
+        "node_modules/underscore/cjs/_tagTester.js",
+        "node_modules/underscore/cjs/_toBufferView.js",
+        "node_modules/underscore/cjs/_toPath.js",
+        "node_modules/underscore/cjs/_unescapeMap.js",
+        "node_modules/underscore/cjs/after.js",
+        "node_modules/underscore/cjs/allKeys.js",
+        "node_modules/underscore/cjs/before.js",
+        "node_modules/underscore/cjs/bind.js",
+        "node_modules/underscore/cjs/bindAll.js",
+        "node_modules/underscore/cjs/chain.js",
+        "node_modules/underscore/cjs/chunk.js",
+        "node_modules/underscore/cjs/clone.js",
+        "node_modules/underscore/cjs/compact.js",
+        "node_modules/underscore/cjs/compose.js",
+        "node_modules/underscore/cjs/constant.js",
+        "node_modules/underscore/cjs/contains.js",
+        "node_modules/underscore/cjs/countBy.js",
+        "node_modules/underscore/cjs/create.js",
+        "node_modules/underscore/cjs/debounce.js",
+        "node_modules/underscore/cjs/defaults.js",
+        "node_modules/underscore/cjs/defer.js",
+        "node_modules/underscore/cjs/delay.js",
+        "node_modules/underscore/cjs/difference.js",
+        "node_modules/underscore/cjs/each.js",
+        "node_modules/underscore/cjs/escape.js",
+        "node_modules/underscore/cjs/every.js",
+        "node_modules/underscore/cjs/extend.js",
+        "node_modules/underscore/cjs/extendOwn.js",
+        "node_modules/underscore/cjs/filter.js",
+        "node_modules/underscore/cjs/find.js",
+        "node_modules/underscore/cjs/findIndex.js",
+        "node_modules/underscore/cjs/findKey.js",
+        "node_modules/underscore/cjs/findLastIndex.js",
+        "node_modules/underscore/cjs/findWhere.js",
+        "node_modules/underscore/cjs/first.js",
+        "node_modules/underscore/cjs/flatten.js",
+        "node_modules/underscore/cjs/functions.js",
+        "node_modules/underscore/cjs/get.js",
+        "node_modules/underscore/cjs/groupBy.js",
+        "node_modules/underscore/cjs/has.js",
+        "node_modules/underscore/cjs/identity.js",
+        "node_modules/underscore/cjs/index-default.js",
+        "node_modules/underscore/cjs/index.js",
+        "node_modules/underscore/cjs/indexBy.js",
+        "node_modules/underscore/cjs/indexOf.js",
+        "node_modules/underscore/cjs/initial.js",
+        "node_modules/underscore/cjs/intersection.js",
+        "node_modules/underscore/cjs/invert.js",
+        "node_modules/underscore/cjs/invoke.js",
+        "node_modules/underscore/cjs/isArguments.js",
+        "node_modules/underscore/cjs/isArray.js",
+        "node_modules/underscore/cjs/isArrayBuffer.js",
+        "node_modules/underscore/cjs/isBoolean.js",
+        "node_modules/underscore/cjs/isDataView.js",
+        "node_modules/underscore/cjs/isDate.js",
+        "node_modules/underscore/cjs/isElement.js",
+        "node_modules/underscore/cjs/isEmpty.js",
+        "node_modules/underscore/cjs/isEqual.js",
+        "node_modules/underscore/cjs/isError.js",
+        "node_modules/underscore/cjs/isFinite.js",
+        "node_modules/underscore/cjs/isFunction.js",
+        "node_modules/underscore/cjs/isMap.js",
+        "node_modules/underscore/cjs/isMatch.js",
+        "node_modules/underscore/cjs/isNaN.js",
+        "node_modules/underscore/cjs/isNull.js",
+        "node_modules/underscore/cjs/isNumber.js",
+        "node_modules/underscore/cjs/isObject.js",
+        "node_modules/underscore/cjs/isRegExp.js",
+        "node_modules/underscore/cjs/isSet.js",
+        "node_modules/underscore/cjs/isString.js",
+        "node_modules/underscore/cjs/isSymbol.js",
+        "node_modules/underscore/cjs/isTypedArray.js",
+        "node_modules/underscore/cjs/isUndefined.js",
+        "node_modules/underscore/cjs/isWeakMap.js",
+        "node_modules/underscore/cjs/isWeakSet.js",
+        "node_modules/underscore/cjs/iteratee.js",
+        "node_modules/underscore/cjs/keys.js",
+        "node_modules/underscore/cjs/last.js",
+        "node_modules/underscore/cjs/lastIndexOf.js",
+        "node_modules/underscore/cjs/map.js",
+        "node_modules/underscore/cjs/mapObject.js",
+        "node_modules/underscore/cjs/matcher.js",
+        "node_modules/underscore/cjs/max.js",
+        "node_modules/underscore/cjs/memoize.js",
+        "node_modules/underscore/cjs/min.js",
+        "node_modules/underscore/cjs/mixin.js",
+        "node_modules/underscore/cjs/negate.js",
+        "node_modules/underscore/cjs/noop.js",
+        "node_modules/underscore/cjs/now.js",
+        "node_modules/underscore/cjs/object.js",
+        "node_modules/underscore/cjs/omit.js",
+        "node_modules/underscore/cjs/once.js",
+        "node_modules/underscore/cjs/pairs.js",
+        "node_modules/underscore/cjs/partial.js",
+        "node_modules/underscore/cjs/partition.js",
+        "node_modules/underscore/cjs/pick.js",
+        "node_modules/underscore/cjs/pluck.js",
+        "node_modules/underscore/cjs/property.js",
+        "node_modules/underscore/cjs/propertyOf.js",
+        "node_modules/underscore/cjs/random.js",
+        "node_modules/underscore/cjs/range.js",
+        "node_modules/underscore/cjs/reduce.js",
+        "node_modules/underscore/cjs/reduceRight.js",
+        "node_modules/underscore/cjs/reject.js",
+        "node_modules/underscore/cjs/rest.js",
+        "node_modules/underscore/cjs/restArguments.js",
+        "node_modules/underscore/cjs/result.js",
+        "node_modules/underscore/cjs/sample.js",
+        "node_modules/underscore/cjs/shuffle.js",
+        "node_modules/underscore/cjs/size.js",
+        "node_modules/underscore/cjs/some.js",
+        "node_modules/underscore/cjs/sortBy.js",
+        "node_modules/underscore/cjs/sortedIndex.js",
+        "node_modules/underscore/cjs/tap.js",
+        "node_modules/underscore/cjs/template.js",
+        "node_modules/underscore/cjs/templateSettings.js",
+        "node_modules/underscore/cjs/throttle.js",
+        "node_modules/underscore/cjs/times.js",
+        "node_modules/underscore/cjs/toArray.js",
+        "node_modules/underscore/cjs/toPath.js",
+        "node_modules/underscore/cjs/underscore-array-methods.js",
+        "node_modules/underscore/cjs/underscore.js",
+        "node_modules/underscore/cjs/unescape.js",
+        "node_modules/underscore/cjs/union.js",
+        "node_modules/underscore/cjs/uniq.js",
+        "node_modules/underscore/cjs/uniqueId.js",
+        "node_modules/underscore/cjs/unzip.js",
+        "node_modules/underscore/cjs/values.js",
+        "node_modules/underscore/cjs/where.js",
+        "node_modules/underscore/cjs/without.js",
+        "node_modules/underscore/cjs/wrap.js",
+        "node_modules/underscore/cjs/zip.js",
+        "node_modules/underscore/modules/_baseCreate.js",
+        "node_modules/underscore/modules/_baseIteratee.js",
+        "node_modules/underscore/modules/_cb.js",
+        "node_modules/underscore/modules/_chainResult.js",
+        "node_modules/underscore/modules/_collectNonEnumProps.js",
+        "node_modules/underscore/modules/_createAssigner.js",
+        "node_modules/underscore/modules/_createEscaper.js",
+        "node_modules/underscore/modules/_createIndexFinder.js",
+        "node_modules/underscore/modules/_createPredicateIndexFinder.js",
+        "node_modules/underscore/modules/_createReduce.js",
+        "node_modules/underscore/modules/_createSizePropertyCheck.js",
+        "node_modules/underscore/modules/_deepGet.js",
+        "node_modules/underscore/modules/_escapeMap.js",
+        "node_modules/underscore/modules/_executeBound.js",
+        "node_modules/underscore/modules/_flatten.js",
+        "node_modules/underscore/modules/_getByteLength.js",
+        "node_modules/underscore/modules/_getLength.js",
+        "node_modules/underscore/modules/_group.js",
+        "node_modules/underscore/modules/_has.js",
+        "node_modules/underscore/modules/_hasObjectTag.js",
+        "node_modules/underscore/modules/_isArrayLike.js",
+        "node_modules/underscore/modules/_isBufferLike.js",
+        "node_modules/underscore/modules/_keyInObj.js",
+        "node_modules/underscore/modules/_methodFingerprint.js",
+        "node_modules/underscore/modules/_optimizeCb.js",
+        "node_modules/underscore/modules/_setup.js",
+        "node_modules/underscore/modules/_shallowProperty.js",
+        "node_modules/underscore/modules/_stringTagBug.js",
+        "node_modules/underscore/modules/_tagTester.js",
+        "node_modules/underscore/modules/_toBufferView.js",
+        "node_modules/underscore/modules/_toPath.js",
+        "node_modules/underscore/modules/_unescapeMap.js",
+        "node_modules/underscore/modules/after.js",
+        "node_modules/underscore/modules/allKeys.js",
+        "node_modules/underscore/modules/before.js",
+        "node_modules/underscore/modules/bind.js",
+        "node_modules/underscore/modules/bindAll.js",
+        "node_modules/underscore/modules/chain.js",
+        "node_modules/underscore/modules/chunk.js",
+        "node_modules/underscore/modules/clone.js",
+        "node_modules/underscore/modules/compact.js",
+        "node_modules/underscore/modules/compose.js",
+        "node_modules/underscore/modules/constant.js",
+        "node_modules/underscore/modules/contains.js",
+        "node_modules/underscore/modules/countBy.js",
+        "node_modules/underscore/modules/create.js",
+        "node_modules/underscore/modules/debounce.js",
+        "node_modules/underscore/modules/defaults.js",
+        "node_modules/underscore/modules/defer.js",
+        "node_modules/underscore/modules/delay.js",
+        "node_modules/underscore/modules/difference.js",
+        "node_modules/underscore/modules/each.js",
+        "node_modules/underscore/modules/escape.js",
+        "node_modules/underscore/modules/every.js",
+        "node_modules/underscore/modules/extend.js",
+        "node_modules/underscore/modules/extendOwn.js",
+        "node_modules/underscore/modules/filter.js",
+        "node_modules/underscore/modules/find.js",
+        "node_modules/underscore/modules/findIndex.js",
+        "node_modules/underscore/modules/findKey.js",
+        "node_modules/underscore/modules/findLastIndex.js",
+        "node_modules/underscore/modules/findWhere.js",
+        "node_modules/underscore/modules/first.js",
+        "node_modules/underscore/modules/flatten.js",
+        "node_modules/underscore/modules/functions.js",
+        "node_modules/underscore/modules/get.js",
+        "node_modules/underscore/modules/groupBy.js",
+        "node_modules/underscore/modules/has.js",
+        "node_modules/underscore/modules/identity.js",
+        "node_modules/underscore/modules/index-all.js",
+        "node_modules/underscore/modules/index-default.js",
+        "node_modules/underscore/modules/index.js",
+        "node_modules/underscore/modules/indexBy.js",
+        "node_modules/underscore/modules/indexOf.js",
+        "node_modules/underscore/modules/initial.js",
+        "node_modules/underscore/modules/intersection.js",
+        "node_modules/underscore/modules/invert.js",
+        "node_modules/underscore/modules/invoke.js",
+        "node_modules/underscore/modules/isArguments.js",
+        "node_modules/underscore/modules/isArray.js",
+        "node_modules/underscore/modules/isArrayBuffer.js",
+        "node_modules/underscore/modules/isBoolean.js",
+        "node_modules/underscore/modules/isDataView.js",
+        "node_modules/underscore/modules/isDate.js",
+        "node_modules/underscore/modules/isElement.js",
+        "node_modules/underscore/modules/isEmpty.js",
+        "node_modules/underscore/modules/isEqual.js",
+        "node_modules/underscore/modules/isError.js",
+        "node_modules/underscore/modules/isFinite.js",
+        "node_modules/underscore/modules/isFunction.js",
+        "node_modules/underscore/modules/isMap.js",
+        "node_modules/underscore/modules/isMatch.js",
+        "node_modules/underscore/modules/isNaN.js",
+        "node_modules/underscore/modules/isNull.js",
+        "node_modules/underscore/modules/isNumber.js",
+        "node_modules/underscore/modules/isObject.js",
+        "node_modules/underscore/modules/isRegExp.js",
+        "node_modules/underscore/modules/isSet.js",
+        "node_modules/underscore/modules/isString.js",
+        "node_modules/underscore/modules/isSymbol.js",
+        "node_modules/underscore/modules/isTypedArray.js",
+        "node_modules/underscore/modules/isUndefined.js",
+        "node_modules/underscore/modules/isWeakMap.js",
+        "node_modules/underscore/modules/isWeakSet.js",
+        "node_modules/underscore/modules/iteratee.js",
+        "node_modules/underscore/modules/keys.js",
+        "node_modules/underscore/modules/last.js",
+        "node_modules/underscore/modules/lastIndexOf.js",
+        "node_modules/underscore/modules/map.js",
+        "node_modules/underscore/modules/mapObject.js",
+        "node_modules/underscore/modules/matcher.js",
+        "node_modules/underscore/modules/max.js",
+        "node_modules/underscore/modules/memoize.js",
+        "node_modules/underscore/modules/min.js",
+        "node_modules/underscore/modules/mixin.js",
+        "node_modules/underscore/modules/negate.js",
+        "node_modules/underscore/modules/noop.js",
+        "node_modules/underscore/modules/now.js",
+        "node_modules/underscore/modules/object.js",
+        "node_modules/underscore/modules/omit.js",
+        "node_modules/underscore/modules/once.js",
+        "node_modules/underscore/modules/pairs.js",
+        "node_modules/underscore/modules/partial.js",
+        "node_modules/underscore/modules/partition.js",
+        "node_modules/underscore/modules/pick.js",
+        "node_modules/underscore/modules/pluck.js",
+        "node_modules/underscore/modules/property.js",
+        "node_modules/underscore/modules/propertyOf.js",
+        "node_modules/underscore/modules/random.js",
+        "node_modules/underscore/modules/range.js",
+        "node_modules/underscore/modules/reduce.js",
+        "node_modules/underscore/modules/reduceRight.js",
+        "node_modules/underscore/modules/reject.js",
+        "node_modules/underscore/modules/rest.js",
+        "node_modules/underscore/modules/restArguments.js",
+        "node_modules/underscore/modules/result.js",
+        "node_modules/underscore/modules/sample.js",
+        "node_modules/underscore/modules/shuffle.js",
+        "node_modules/underscore/modules/size.js",
+        "node_modules/underscore/modules/some.js",
+        "node_modules/underscore/modules/sortBy.js",
+        "node_modules/underscore/modules/sortedIndex.js",
+        "node_modules/underscore/modules/tap.js",
+        "node_modules/underscore/modules/template.js",
+        "node_modules/underscore/modules/templateSettings.js",
+        "node_modules/underscore/modules/throttle.js",
+        "node_modules/underscore/modules/times.js",
+        "node_modules/underscore/modules/toArray.js",
+        "node_modules/underscore/modules/toPath.js",
+        "node_modules/underscore/modules/underscore-array-methods.js",
+        "node_modules/underscore/modules/underscore.js",
+        "node_modules/underscore/modules/unescape.js",
+        "node_modules/underscore/modules/union.js",
+        "node_modules/underscore/modules/uniq.js",
+        "node_modules/underscore/modules/uniqueId.js",
+        "node_modules/underscore/modules/unzip.js",
+        "node_modules/underscore/modules/values.js",
+        "node_modules/underscore/modules/where.js",
+        "node_modules/underscore/modules/without.js",
+        "node_modules/underscore/modules/wrap.js",
+        "node_modules/underscore/modules/zip.js",
+        "node_modules/underscore/underscore-esm-min.js",
+        "node_modules/underscore/underscore-esm.js",
+        "node_modules/underscore/underscore-min.js",
+        "node_modules/underscore/underscore-umd-min.js",
+        "node_modules/underscore/underscore-umd.js",
+        "node_modules/underscore/underscore.js",
+        "node_modules/zadeh/index.js"
+      ],
+      ".node": [
+        "node_modules/zadeh/prebuilds/darwin-x64/electron.napi.node",
+        "node_modules/zadeh/prebuilds/darwin-x64/node.napi.node",
+        "node_modules/zadeh/prebuilds/linux-x64/electron.napi.node",
+        "node_modules/zadeh/prebuilds/linux-x64/node.napi.node",
+        "node_modules/zadeh/prebuilds/win32-ia32/electron.napi.node",
+        "node_modules/zadeh/prebuilds/win32-ia32/node.napi.node",
+        "node_modules/zadeh/prebuilds/win32-x64/electron.napi.node",
+        "node_modules/zadeh/prebuilds/win32-x64/node.napi.node"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "",
+          ".github",
+          "dist",
+          "lib",
+          "lib/config",
+          "spec",
+          "spec/fixtures/somedir/testdir",
+          "spec/fixtures/somedir",
+          "spec/fixtures/tests"
+        ],
+        "dependencies": {
+          "chokidar": "^3.5.2",
+          "fast-glob": "^3.2.7",
+          "globify-gitignore": "^0.2.1",
+          "minimatch": "^3.0.4",
+          "slash": "^4.0.0",
+          "underscore": "^1.13.1",
+          "zadeh": "^2.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/anymatch"
+        ],
+        "dependencies": {
+          "normalize-path": "^3.0.0",
+          "picomatch": "^2.0.4"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/bindings"
+        ],
+        "dependencies": {
+          "file-uri-to-path": "1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/brace-expansion"
+        ],
+        "dependencies": {
+          "balanced-match": "^1.0.0",
+          "concat-map": "0.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/braces",
+          "node_modules/braces/lib"
+        ],
+        "dependencies": {
+          "fill-range": "^7.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/chokidar",
+          "node_modules/chokidar/lib"
+        ],
+        "dependencies": {
+          "anymatch": "~3.1.2",
+          "braces": "~3.0.2",
+          "fsevents": "~2.3.2",
+          "glob-parent": "~5.1.2",
+          "is-binary-path": "~2.1.0",
+          "is-glob": "~4.0.1",
+          "normalize-path": "~3.0.0",
+          "readdirp": "~3.6.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/fast-glob/out",
+          "node_modules/fast-glob/out/managers",
+          "node_modules/fast-glob/out/providers",
+          "node_modules/fast-glob/out/providers/filters",
+          "node_modules/fast-glob/out/providers/matchers",
+          "node_modules/fast-glob/out/providers/transformers",
+          "node_modules/fast-glob/out/readers",
+          "node_modules/fast-glob/out/types",
+          "node_modules/fast-glob/out/utils",
+          "node_modules/fast-glob"
+        ],
+        "dependencies": {
+          "@nodelib/fs.stat": "^2.0.2",
+          "@nodelib/fs.walk": "^1.2.3",
+          "glob-parent": "^5.1.2",
+          "merge2": "^1.3.0",
+          "micromatch": "^4.0.4"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/fastq",
+          "node_modules/fastq/test"
+        ],
+        "dependencies": {
+          "reusify": "^1.0.4"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/fill-range"
+        ],
+        "dependencies": {
+          "to-regex-range": "^5.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/glob-parent"
+        ],
+        "dependencies": {
+          "is-glob": "^4.0.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/globify-gitignore/dist",
+          "node_modules/globify-gitignore",
+          "node_modules/globify-gitignore/src"
+        ],
+        "dependencies": {
+          "dedent": "^0.7.0",
+          "is-valid-path": "^0.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/is-binary-path"
+        ],
+        "dependencies": {
+          "binary-extensions": "^2.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/is-glob"
+        ],
+        "dependencies": {
+          "is-extglob": "^2.1.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/is-invalid-path"
+        ],
+        "dependencies": {
+          "is-glob": "^2.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/is-invalid-path/node_modules/is-glob"
+        ],
+        "dependencies": {
+          "is-extglob": "^1.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/is-valid-path"
+        ],
+        "dependencies": {
+          "is-invalid-path": "^0.1.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/micromatch"
+        ],
+        "dependencies": {
+          "braces": "^3.0.1",
+          "picomatch": "^2.2.3"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/minimatch"
+        ],
+        "dependencies": {
+          "brace-expansion": "^1.1.7"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/readdirp"
+        ],
+        "dependencies": {
+          "picomatch": "^2.2.1"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/run-parallel"
+        ],
+        "dependencies": {
+          "queue-microtask": "^1.2.2"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/to-regex-range"
+        ],
+        "dependencies": {
+          "is-number": "^7.0.0"
+        }
+      },
+      {
+        "paths": [
+          "node_modules/zadeh",
+          "node_modules/zadeh/prebuilds/darwin-x64",
+          "node_modules/zadeh/prebuilds/linux-x64",
+          "node_modules/zadeh/prebuilds/win32-ia32",
+          "node_modules/zadeh/prebuilds/win32-x64",
+          "node_modules/zadeh/src/binding"
+        ],
+        "dependencies": {
+          "bindings": "~1.5.0",
+          "node-addon-api": "~3.1.0",
+          "node-gyp-build": "^4.2.3"
+        }
+      }
+    ]
+  }
+}

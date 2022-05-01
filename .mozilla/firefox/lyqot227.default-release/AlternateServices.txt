@@ -1,0 +1,2 @@
+https:cdn.discordapp.com:443:.:^partitionKey=%28https%2Cdiscordapp.com%29:3	0	19112	https:cdn.discordapp.com:443:cdn.discordapp.com:443::n:1651423176:h3:y:1651166643:n:^partitionKey=%28https%2Cdiscordapp.com%29:|n:y:
+https:safebrowsing.googleapis.com:443:.:^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:3	3	19113	https:safebrowsing.googleapis.com:443:safebrowsing.googleapis.com:443::n:1654015196:h3:y:1651166643:n:^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:|n:y:

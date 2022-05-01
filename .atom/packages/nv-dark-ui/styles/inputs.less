@@ -1,0 +1,69 @@
+
+.input-checkbox {
+    &:active {
+        background-color: @accent-color;
+    }
+
+    &:before,
+    &:after {
+        background-color: @accent-text-color;
+    }
+
+    &:checked {
+        background-color: @accent-color;
+    }
+
+    &:indeterminate {
+        background-color: @accent-color;
+    }
+}
+
+.input-radio {
+    &:before {
+        background-color: @accent-text-color;
+    }
+
+    &:active {
+        background-color: @accent-color;
+    }
+
+    &:checked {
+        background-color: @accent-color;
+    }
+}
+
+.input-range {
+    &::-webkit-slider-thumb {
+        background-color: @accent-color;
+    }
+}
+
+.input-toggle {
+    &:checked {
+      background-color: @accent-color;
+    }
+
+    &:before {
+        background-color: @accent-text-color;
+    }
+}
+
+.input-text,
+.input-search,
+.input-number,
+.input-textarea,
+.input-select,
+.input-color {
+    &:focus {
+        .focus();
+    }
+}
+
+.input-text,
+.input-search,
+.input-number,
+.input-textarea {
+    &:invalid {
+        .invalid();
+    }
+}

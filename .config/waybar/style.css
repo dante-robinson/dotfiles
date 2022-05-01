@@ -1,0 +1,141 @@
+@define-color background #1d2021;
+@define-color foreground #ffffff;
+@define-color yellow     #fabd2f;
+@define-color red        #fb4934;
+@define-color green      #b8bb26;
+
+* {
+  border: none;
+  font-family: Input, "Liberation Sans";
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#window {
+  color: #9ece6a;
+}
+
+window#waybar {
+  background: #1a1b26;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#workspaces,
+#mode,
+#clock,
+#pulseaudio,
+#backlight,
+#battery,
+#network,
+#window,
+#cpu,
+#memory,
+#disk,
+#custom-crypto,
+#tray {
+  background-color: #252734;
+  padding: 0 10px;
+  margin: 2px 4px 4px 2px;
+  border-radius: 90px;
+  background-clip: padding-box;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  min-width: 20px;
+  color: #7aa2f7;
+}
+
+#workspaces button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.focused {
+  color: #c678dd;
+}
+
+#workspaces button.urgent {
+  color: #e06c75;
+}
+
+#mode {
+  background-color: @background;
+  border-top: 3px solid @background;
+  border-bottom: 3px solid @red;
+}
+
+#mode {
+  color: #e06c75;
+}
+
+#pulseaudio {
+  color: #d19a66;
+}
+
+#pulseaudio.muted {
+  background-color: #e06c75;
+  color: #1e222a;
+}
+
+#network {
+  color: #c678dd;
+}
+
+#network.disconnected {
+  background-color: #e06c75;
+  color: #1e222a;
+}
+
+#cpu {
+  color: #d19a66;
+}
+
+#disk {
+  color: #56b6c2;
+}
+
+#memory {
+  color: #c678dd;
+}
+
+#backlight {
+  color: #7aa2f7;
+}
+
+#battery {
+  color: #98c379;
+}
+
+#battery.critical:not(.charging) {
+  background-color: #e06c75;
+  color: #1e222a;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#battery.charging,
+#battery.plugged {
+  background-color: #98c379;
+  color: #1e222a;
+}
+
+#battery.plugged {
+  background-color: #98c379;
+  color: #1e222a;
+}
+
+#clock {
+  color: #7aa2f7;
+}
+
+#custom-crypto {
+  color: #7aa2f7;
+}

@@ -1,0 +1,62 @@
+{
+  "_from": "https://www.atom.io/api/packages/react-redux-es6-snippets/versions/0.1.3/tarball",
+  "_id": "react-redux-es6-snippets@0.1.3",
+  "_inBundle": false,
+  "_integrity": "sha512-WoSu6SfwOz2rB8WnNPpLhmdIjGwZMRpgQc9O3qm96d17gC9EX69OBvxAHozvEIb2gNguaYL1EDruvR6xi8VzXA==",
+  "_location": "/react-redux-es6-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/react-redux-es6-snippets/versions/0.1.3/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/react-redux-es6-snippets/versions/0.1.3/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/react-redux-es6-snippets/versions/0.1.3/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/react-redux-es6-snippets/versions/0.1.3/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/react-redux-es6-snippets/versions/0.1.3/tarball",
+  "_shasum": "48e6e917814f19ebb43e5868643e31e324b4e89a",
+  "_spec": "https://www.atom.io/api/packages/react-redux-es6-snippets/versions/0.1.3/tarball",
+  "_where": "/tmp/apm-install-dir-20211119-1883670-1qpv5lp.o7h9",
+  "author": {
+    "name": "ZhangCongjie",
+    "email": "zhangcongjie402@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ZhangCongjie/react-redux-es6-snippets/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "react redux es6 snippets",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/ZhangCongjie/react-redux-es6-snippets#readme",
+  "keywords": [
+    "react",
+    "redux",
+    "es6",
+    "ES2016",
+    "snippets",
+    "atom"
+  ],
+  "license": "MIT",
+  "name": "react-redux-es6-snippets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhangCongjie/react-redux-es6-snippets.git"
+  },
+  "version": "0.1.3",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

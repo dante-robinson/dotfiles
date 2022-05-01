@@ -1,0 +1,33 @@
+'atom-text-editor, .markdown-preview-plus':
+  'ctrl-M': 'markdown-preview-plus:toggle'
+  'ctrl-X': 'markdown-preview-plus:toggle-render-latex'
+
+'.markdown-preview-plus':
+  'f3': 'markdown-preview-plus:find-next'
+  'end': 'core:move-to-bottom'
+  'home': 'core:move-to-top'
+  'space': 'core:page-down'
+
+'.platform-darwin .markdown-preview-plus':
+  'cmd-+': 'markdown-preview-plus:zoom-in'
+  'cmd-=': 'markdown-preview-plus:zoom-in'
+  'cmd--': 'markdown-preview-plus:zoom-out'
+  'cmd-_': 'markdown-preview-plus:zoom-out'
+  'cmd-0': 'markdown-preview-plus:reset-zoom'
+  'cmd-f': 'markdown-preview-plus:find-in-preview'
+
+'.platform-win32 .markdown-preview-plus':
+  'ctrl-+': 'markdown-preview-plus:zoom-in'
+  'ctrl-=': 'markdown-preview-plus:zoom-in'
+  'ctrl--': 'markdown-preview-plus:zoom-out'
+  'ctrl-_': 'markdown-preview-plus:zoom-out'
+  'ctrl-0': 'markdown-preview-plus:reset-zoom'
+  'ctrl-f': 'markdown-preview-plus:find-in-preview'
+
+'.platform-linux .markdown-preview-plus':
+  'ctrl-+': 'markdown-preview-plus:zoom-in'
+  'ctrl-=': 'markdown-preview-plus:zoom-in'
+  'ctrl--': 'markdown-preview-plus:zoom-out'
+  'ctrl-_': 'markdown-preview-plus:zoom-out'
+  'ctrl-0': 'markdown-preview-plus:reset-zoom'
+  'ctrl-f': 'markdown-preview-plus:find-in-preview'

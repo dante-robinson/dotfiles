@@ -1,0 +1,33 @@
+"*":
+  "atom-package-deps":
+    ignored: [
+      "atom-ternjs"
+    ]
+  core:
+    disabledPackages: [
+      "markdown-preview"
+      "metrics"
+      "exception-reporting"
+      "about"
+      "background-tips"
+      "welcome"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "darker-one-dark-syntax"
+    ]
+  editor:
+    defaultFontSize: 15
+    fontFamily: "Liberation Mono"
+    fontSize: 12
+    preferredLineLength: 90
+  "linter-ui-default": {}
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+    prettierEslintOptions:
+      prettierLast: true
+  "spell-check": {}
+  welcome:
+    showOnStartup: false
