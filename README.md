@@ -89,4 +89,8 @@ The atom config is pretty straightforward and just automatically will add the ad
 
 #### waybar: https://github.com/Alexays/Waybar
 
+#### ly (optional display manager): https://github.com/fairyglade/ly
+
+#### Color Scheme from: https://github.com/roidm/sway-borders
+
 #### pyllyukko user.js template used: https://github.com/pyllyukko/user.js/
