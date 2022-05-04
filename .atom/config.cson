@@ -15,7 +15,7 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "darker-one-dark-syntax"
+      "tokyo-night-syntax"
     ]
   editor:
     defaultFontSize: 15
