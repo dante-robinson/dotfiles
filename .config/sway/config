@@ -1,4 +1,5 @@
 ### Font
+exec gentoo-pipewire-launcher
 font pango:Liberation Sans,11px
 
 ### Variables
@@ -172,9 +173,9 @@ bar {
 }
 
 # Media keys
-bindsym Mod1+Up exec pamixer -i 5
-bindsym Mod1+Down exec pamixer -d 5
-bindsym Mod1+M exec pamixer -t
+bindsym Mod1+Up exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym Mod1+Down exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym Mod1+M exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 # Brightness keys
 bindsym XF86MonBrightnessUp exec brightnessctl set 10%+ | sed -En 's/.*\(([0-9]+)%\).*/\1/p' > $WOBSOCK
