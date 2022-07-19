@@ -27,7 +27,7 @@ window#waybar.hidden {
 
 #workspaces,
 #mode,
-#clock,
+#custom-clock,
 #pulseaudio,
 #backlight,
 #battery,
@@ -132,7 +132,7 @@ window#waybar.hidden {
   color: #1e222a;
 }
 
-#clock {
+#custom-clock {
   color: #7aa2f7;
 }
 

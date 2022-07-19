@@ -1,11 +1,11 @@
 {
     "layer": "top",
-    "height": 25,
+    "height": 30,
     "modules-left": [
         "sway/workspaces",
         "sway/mode"
     ],
-    "modules-center": ["clock"],
+    "modules-center": ["custom/clock"],
     "modules-right": [
         "custom/crypto",
         "pulseaudio",
@@ -22,13 +22,13 @@
     },
 
     "tray": {
-        // "icon-size": 16,
+        "icon-size": 16,
         "spacing": 10
     },
 
-    "clock": {
-        "format": "{:%b %d %H:%M} ",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "custom/clock": {
+        "exec": "date +'%H:%M:%S  '",
+        "interval": 1
     },
 
     "cpu": {
@@ -69,7 +69,7 @@
     },
 
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        // "interface": "wlp4s0", // (Optional) To force the use of this interface
         "format-wifi": "",
         "format-ethernet": " {ifname}: {ipaddr}/{cidr}",
         "format-linked": "{ifname} (No IP) ",
