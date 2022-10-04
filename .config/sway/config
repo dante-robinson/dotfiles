@@ -1,6 +1,6 @@
 ### Font
 exec gentoo-pipewire-launcher
-font pango:Liberation Sans,11px
+font pango:RobotoMono Nerd Font Regular 8
 
 ### Variables
 #
@@ -169,7 +169,22 @@ bindsym $mod+r mode "resize"
 #
 
 bar {
-		swaybar_command waybar
+		swaybar_command swaybar
+		position top
+		height 16
+		status_command i3blocks
+		workspace_min_width 24
+		colors {
+        		background #1a1b26
+        		separator  #353b45
+        		statusline #abb2bf
+        	
+			focused_workspace   #c574dd #c574dd #282c34
+        		active_workspace    #353b45 #353b45 #abb2bf
+        		inactive_workspace  #282c34 #282c34 #abb2bf
+        		urgent_workspace    #e06c75 #e06c75 #282c34
+        		binding_mode        #e5c07b #e5c07b #282c34
+		}
 }
 
 # Media keys
@@ -207,11 +222,6 @@ input type:keyboard {
     xkb_layout us,no
     xkb_options grp:alt_shift_toggle
 }
-
-# Startup programs
-exec --no-startup-id ~/.local/share/tresorit/tresorit %u --hidden &
-exec --no-startup-id syncthing --no-browser --logfile=default &
-exec --no-startup-id wl-paste -t text --watch clipman store
 
 # Clipman
 bindsym $mod+t exec --no-startup-id foot --app-id=clipman clipman pick --print0 --tool=CUSTOM --tool-args="fzf --prompt 'pick > ' --bind 'tab:up' --cycle --read0"
