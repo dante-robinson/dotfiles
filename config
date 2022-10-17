@@ -1,0 +1,16 @@
+Host *
+	# Tell SSH to pass its connections through netcat, using a SOCKS5 proxy at 127.0.0.1:9050 (tor default).
+	ProxyCommand nc -X 5 -x 127.0.0.1:9050 %h %p
+
+	# Privacy protections
+	# Prevents SSH from telling the remote server about all of your public keys, potentially revealing your ID
+	ForwardAgent no
+	IdentitiesOnly yes
+
+        # Merges connections to a server to prevent expensive reconnections
+        # To avoid this, invoke ssh as: ssh -o 'ControlMaster no' ...
+	ControlMaster auto
+	ControlPath ~/.ssh/master-%r@%n:%p
+
+        # Compression for low bandwidth lines (like Tor)
+	Compression yes
