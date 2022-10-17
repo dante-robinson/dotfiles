@@ -50,7 +50,7 @@ and then refreshing sway by running Control + Super + R.
 
 You will need the following packages to use the WM Config out of the box without changing much
 
-`pamixer sway waybar foot mako wofi grim feh`
+`sway foot mako wofi slurp grim feh`
 
 ## Commands/Shortcuts
 
@@ -68,10 +68,12 @@ Note the Super key I am referring to is the Windows Key
 <b>Super + Enter -</b> Launch a foot terminal<br>
 <b>Super + Number -</b> Change to that Workspace Number so 5 would bring to Workspace 5<br>
 <b>Super + Shift + Number -</b> Move current window to that workspace<br>
+<b>PrtScn -</b> Take a screenshot of the entire screen using slurp<br>
+<b>Super + PrtScn  -</b> Take a screenshot of a selected area using grim<br>
 
 ## Extra dotfiles (Firefox Atom and zsh)
 
-The atom config is pretty straightforward and just automatically will add the addons and preferences I use. As for the Firefox config this is a pretty extreme user.js config with a bunch of extensions for added security as well as to use my crypto hardware wallets. If you do use the .mozilla folder you will visit many sites that will not work without having javascript enabled and you will need to enable those sites to be allowed to run javascript through the noScript extension. For most websites they will have alot of javascript from many providers you don't need to enable them all usually for basic functionality. You can make sure the browser config is working correctly by visiting http://browserleaks.com and checking to make sure WebRTC, WebGL and stuff like that is all disabled javascript is enabled through noScript if you want to test those leaks. Location data will depend on your own DNS setup and both the Font and Canvas fingerprinting should be randomized on each refresh. To change your shell to zsh you can run this command
+The neovim config is based on ecovim and contains my personal tweaks to it nothing crazy. As for the Firefox config this is a pretty extreme user.js config with a bunch of extensions for added security as well as to use my crypto hardware wallets. If you do use the .mozilla folder you will visit many sites that will not work without having javascript enabled and you will need to enable those sites to be allowed to run javascript through the noScript extension. For most websites they will have alot of javascript from many providers you don't need to enable them all usually for basic functionality. You can make sure the browser config is working correctly by visiting http://browserleaks.com and checking to make sure WebRTC, WebGL and stuff like that is all disabled javascript is enabled through noScript if you want to test those leaks. Location data will depend on your own DNS setup and both the Font and Canvas fingerprinting should be randomized on each refresh. To change your shell to zsh you can run this command
 
 `chsh -s /bin/zsh`
 
@@ -87,9 +89,9 @@ The atom config is pretty straightforward and just automatically will add the ad
 
 #### slurp: https://github.com/emersion/slurp
 
-#### waybar: https://github.com/Alexays/Waybar
-
 #### ly (optional display manager): https://github.com/fairyglade/ly
+
+#### greetd (another display manager): https://github.com/kennylevinsen/greetd
 
 #### Color Scheme from: https://github.com/roidm/sway-borders
 
