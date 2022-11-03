@@ -1,7 +1,6 @@
 ### Font
 exec gentoo-pipewire-launcher
-font pango:RobotoMono Nerd Font Regular 8
-
+font pango:RobotoMono Nerd Font Regular 9
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -175,13 +174,13 @@ bar {
 		status_command i3blocks
 		workspace_min_width 24
 		colors {
-        		background #1a1b26
-        		separator  #353b45
-        		statusline #abb2bf
+        		background #e1e2e7
+        		separator  #a1a6c5
+        		statusline  #a1a6c5
         	
-			focused_workspace   #c574dd #c574dd #282c34
-        		active_workspace    #353b45 #353b45 #abb2bf
-        		inactive_workspace  #282c34 #282c34 #abb2bf
+			focused_workspace   #c574dd #c574dd #24283b
+        		active_workspace    #353b45 #353b45 #24283b
+        		inactive_workspace  #e1e2e7 #e1e2e7 #abb2bf
         		urgent_workspace    #e06c75 #e06c75 #282c34
         		binding_mode        #e5c07b #e5c07b #282c34
 		}
