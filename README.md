@@ -30,7 +30,7 @@ This forked repository is based on the PowerArrow-Dark theme from the source men
 ## Installation
 
 ```
-git clone https://github.com/dante-robinson/AwesomeWM-dotfiles.git && cd dotfiles && mv -f .*  -t ~
+git clone -b AwesomeWM-Arch  https://github.com/dante-robinson/dotfiles.git && cd dotfiles && mv -f .*  -t ~
 ```
 
 ## Usage
