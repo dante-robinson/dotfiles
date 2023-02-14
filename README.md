@@ -15,7 +15,7 @@ This is an updated version of my previous only floating WM setup you can find he
 ## Installation
 
 ```
-git clone https://github.com/dante-robinson/SwayWM-dotfiles.git && cd dotfiles && mv -f .*  -t ~
+git clone -b SwayWM-Gentoo-Light https://github.com/dante-robinson/dotfiles.git && cd dotfiles && mv -f .*  -t ~
 ```
 
 ## Usage
@@ -71,7 +71,7 @@ Note the Super key I am referring to is the Windows Key
 <b>PrtScn -</b> Take a screenshot of the entire screen using slurp<br>
 <b>Super + PrtScn  -</b> Take a screenshot of a selected area using grim<br>
 
-## Extra dotfiles (Firefox Atom and zsh)
+## Extra dotfiles (Firefox Neovim and zsh)
 
 The neovim config is based on ecovim and contains my personal tweaks to it nothing crazy. As for the Firefox config this is a pretty extreme user.js config with a bunch of extensions for added security as well as to use my crypto hardware wallets. If you do use the .mozilla folder you will visit many sites that will not work without having javascript enabled and you will need to enable those sites to be allowed to run javascript through the noScript extension. For most websites they will have alot of javascript from many providers you don't need to enable them all usually for basic functionality. You can make sure the browser config is working correctly by visiting http://browserleaks.com and checking to make sure WebRTC, WebGL and stuff like that is all disabled javascript is enabled through noScript if you want to test those leaks. Location data will depend on your own DNS setup and both the Font and Canvas fingerprinting should be randomized on each refresh. To change your shell to zsh you can run this command
 
