@@ -1,6 +1,6 @@
 ## Description
 
-This is an updated version of my previous only floating WM setup you can find here - https://github.com/dante-robinson/AwesomeWM-dotfiles. This setup is 100% Tiling based and is running on Wayland instead of X11. I am still using a very limited amount of keybinds and you won't find a lot of extra keybinds like others dotfiles. If you are planning to use this setup for personal use just add your own keybinds in the sway config. I tried getting cryptocurrency prices setup in AwesomeWM but couldn't get it working perfectly in this version using SwayWM I have got it setup in waybar.
+This is an updated version of my previous only floating WM setup you can find in the branches of this repo. This setup is 100% Tiling based and is running on Wayland instead of X11. I am still using a very limited amount of keybinds and you won't find a lot of extra keybinds like others dotfiles. If you are planning to use this setup for personal use just add your own keybinds in the sway config. I tried getting cryptocurrency prices setup in AwesomeWM but couldn't get it working perfectly in this version using SwayWM I have got it setup in waybar.
 
 ## Features
 
