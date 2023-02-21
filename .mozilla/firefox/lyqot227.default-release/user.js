@@ -115,12 +115,12 @@ user_pref("beacon.enabled", false);
 // PREF: Disable clipboard event detection (onCut/onCopy/onPaste) via Javascript
 // NOTICE: Disabling clipboard events breaks Ctrl+C/X/V copy/cut/paste functionaility in JS-based web applications (Google Docs...)
 // https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled
-user_pref("dom.event.clipboardevents.enabled", false);
+user_pref("dom.event.clipboardevents.enabled", true);
 
 // PREF: Disable "copy to clipboard" functionality via Javascript (Firefox >= 41)
 // NOTICE: Disabling clipboard operations will break legitimate JS-based "copy to clipboard" functionality
 // https://hg.mozilla.org/mozilla-central/rev/2f9f8ea4b9c3
-user_pref("dom.allow_cut_copy", false);
+user_pref("dom.allow_cut_copy", true);
 
 // PREF: Disable speech recognition
 // https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html
@@ -328,7 +328,7 @@ user_pref("browser.startup.homepage_override.buildID", "20100101");
 // https://github.com/pyllyukko/user.js/issues/395
 // https://browserleaks.com/fonts
 // https://github.com/pyllyukko/user.js/issues/120
-user_pref("browser.display.use_document_fonts", 0);
+user_pref("browser.display.use_document_fonts", 1);
 
 // PREF: Enable only whitelisted URL protocol handlers
 // http://kb.mozillazine.org/Network.protocol-handler.external-default
@@ -1225,3 +1225,9 @@ user_pref("security.ssl3.rsa_aes_256_sha", false); // 0x35
 user_pref("security.ssl3.rsa_aes_128_sha", false); // 0x2f
 user_pref("security.ssl3.ecdhe_rsa_aes_256_sha", false); // 0xc014
 user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha", false); // 0xc00a
+
+// Force Layers acceleration on
+user_pref("layers.acceleration.force-enabled", true);
+
+// Enable webrender
+user_pref("gfx.webrender.enabled", true);
