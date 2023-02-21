@@ -38,7 +38,7 @@ You will need the following packages to use the WM Config out of the box without
 
 Note the Super key I am referring to is the Windows Key
 
-<b>Super + Mouse Button 1 (Left Click) -</b> Move/Drag Window (also brings window to front)
+<b>Super + Mouse Button 1 (Left Click) -</b> Move/Drag Window (also brings window to front)<br>
 <b>Super + Mouse Button 3 (Right Click) -</b> Resize floating only windows<br>
 <b>Control + Super + R -</b> Restart CWM<br>
 <b>Control + Super + Q -</b> Quit CWM<br>
