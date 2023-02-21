@@ -9,7 +9,7 @@ This is an updated version of my previous only WM setups which you can find by v
 ## Installation
 
 ```
-git clone https://github.com/dante-robinson/dotfiles.git && cd dotfiles && mv -f .*  -t ~
+git clone https://github.com/dante-robinson/dotfiles.git && cd dotfiles && mv -f .* -t ~ && mv * -t ~
 ```
 
 ## Usage
