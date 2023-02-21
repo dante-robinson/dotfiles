@@ -8,8 +8,6 @@
 
 ## Description
 
-UPDATE - OUTDATED DOTFILES CURRENT DOTFILES - https://github.com/dante-robinson/SwayWM-dotfiles
-
 This forked repository is based on the PowerArrow-Dark theme from the source mentioned above and has been cut down significantly. I have remove many of the keybinds because I personally do not use most of them as well as deleted all the not used themes and widgets, then I added a few more widgets from the sources you can find at the bottom of the page. The repository is a mixture of code from myself, <a href=https://github.com/lcpz> lcpz</a> and <a href=https://github.com/streetturtle>streetturtle</a>. All notifications have been removed as well as mail integration as I don't like having potentially harmful emails cached to my drive. The WM has been locked in floating only mode as I dont use tiling at all at this time. Freedesktop menu has been changed to rofi as some of my apps were hidden through that menu.
 
 ## Features
