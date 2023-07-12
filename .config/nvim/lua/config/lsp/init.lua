@@ -1,27 +1,12 @@
-local status_ok, _ = pcall(require, "lspconfig")
-if not status_ok then
-  return
-end
+local lsp = require('lsp-zero').preset({})
 
--- Load LSP Servers anything that needs snippet support goes in handlers.lua
-require'lspconfig'.cmake.setup{}
-require'lspconfig'.eslint.setup({
-  --- ...
-  on_attach = function(client, bufnr)
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      buffer = bufnr,
-      command = "EslintFixAll",
-    })
-  end,
-})
-require'lspconfig'.gopls.setup{}
-require'lspconfig'.intelephense.setup{}
-require'lspconfig'.pyright.setup{}
-require'lspconfig'.tailwindcss.setup{}
-require'lspconfig'.tsserver.setup{}
-require'lspconfig'.vimls.setup{}
-require'lspconfig'.vuels.setup{}
+lsp.on_attach(function(client, bufnr)
+  lsp.default_keymaps({buffer = bufnr})
+end)
 
-require "config.lsp.mason"
-require("config.lsp.handlers").setup()
-require "config.lsp.formatter"
+-- (Optional) Configure lua language server for neovim
+require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+
+lsp.setup_servers({'clangd', 'gopls', 'intelephense', 'pyright', 'tsserver', 'vimls', 'vuels'})
+
+lsp.setup()

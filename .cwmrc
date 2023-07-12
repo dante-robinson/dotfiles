@@ -26,6 +26,8 @@ bind-key	4-p		"scrot '/home/user/Pictures/%Y-%m-%d-%H-%M.png'"
 bind-key	S4-p		"scrot -s '/home/user/Pictures/%Y-%m-%d-%H-%M.png'"
 bind-mouse	4-1		window-move
 bind-mouse	4-3		window-resize
+bind-key 	4-Left		window-vtile
+bind-key 	4-Right 	window-cycle
 
 # Workspaces Keybinds
 bind-key 	4-1		group-only-1

@@ -48,6 +48,8 @@ return packer.startup(function(use)
     use "kyazdani42/nvim-web-devicons"
     -- Theme
     use "folke/tokyonight.nvim"
+    -- Extra Syntax Highlighting
+    use "sheerun/vim-polyglot"
     -- Fuzzy Finder
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.1', requires = "nvim-lua/plenary.nvim" }
     -- File Finder
@@ -78,22 +80,23 @@ return packer.startup(function(use)
     use "L3MON4D3/LuaSnip"
     -- Extra Snippets
     use "rafamadriz/friendly-snippets"
-    -- LSP
-    use "neovim/nvim-lspconfig"
-    -- LSP Package Manager
-    use "williamboman/mason.nvim"
-    -- Connect Mason to LSP
-    use "williamboman/mason-lspconfig.nvim"
     -- Highlighting words under cursor
     use "RRethy/vim-illuminate"
     -- Autoclose
     use "windwp/nvim-autopairs"
     -- Comments Keybinds
     use "numToStr/Comment.nvim"
-    -- Useful Git commands and tools
-    use "lewis6991/gitsigns.nvim"
     -- Linter
     use 'mfussenegger/nvim-lint'
+    -- LSP
+    use {
+  	  'VonHeikemen/lsp-zero.nvim',
+  	  branch = 'v2.x',
+  	  requires = {
+            -- LSP Support
+    	    {'neovim/nvim-lspconfig'},
+    	  },
+    }
     -- Formatter
     require('packer').use { 'mhartington/formatter.nvim' }
 
