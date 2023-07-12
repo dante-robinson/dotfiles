@@ -52,15 +52,12 @@ Note the Super key I am referring to is the Windows Key
 <b>Super + Enter -</b> Launch an alacritty terminal<br>
 <b>Super + Number -</b> Change to that Workspace Number so 5 would bring to Workspace 5<br>
 <b>Super + Shift + Number -</b> Move current window to that workspace<br>
-<b>Super + P -</b> Take a screenshot of the entire screen using slurp<br>
-<b>Super + Shift + P  -</b> Take a screenshot of a selected area using grim<br>
+<b>Super + P -</b> Take a screenshot of the entire screen using scrot<br>
+<b>Super + Shift + P  -</b> Take a screenshot of a selected area using scrot<br>
 
-## Extra dotfiles (Firefox Neovim and zsh)
+## Extra dotfiles (Firefox Neovim and ksh)
 
-The neovim config is my own personal config which can be found here - https://github.com/dante-robinson/Neovim-config As for the Firefox config this is a pretty extreme user.js config with a bunch of extensions for added security as well as to use my crypto hardware wallets. If you do use the .mozilla folder you will visit many sites that will not work without having javascript enabled and you will need to enable those sites to be allowed to run javascript through the noScript extension. For most websites they will have alot of javascript from many providers you don't need to enable them all usually for basic functionality. You can make sure the browser config is working correctly by visiting http://browserleaks.com and checking to make sure WebRTC, WebGL and stuff like that is all disabled javascript is enabled through noScript if you want to test those leaks. Location data will depend on your own DNS setup and both the Font and Canvas fingerprinting should be randomized on each refresh. To change your shell to zsh you can run this command
-
-`chsh -s /bin/zsh`
-
+The neovim config is my own personal config which can be found here - https://github.com/dante-robinson/Neovim-config As for the Firefox config this is a pretty extreme user.js config with a bunch of extensions for added security. If you do use the .mozilla folder you will visit many sites that will not work without having javascript enabled and you will need to enable those sites to be allowed to run javascript through the noScript extension. For most websites they will have alot of javascript from many providers you don't need to enable them all usually for basic functionality. You can make sure the browser config is working correctly by visiting http://browserleaks.com and checking to make sure WebRTC, WebGL and stuff like that is all disabled javascript is enabled through noScript if you want to test those leaks. Location data will depend on your own DNS setup and both the Font and Canvas fingerprinting should be randomized on each refresh. I am using ksh on OpenBSD for the shell.
 ## Additional stuff
 
 #### Alacritty: https://github.com/alacritty/alacritty
