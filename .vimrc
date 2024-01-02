@@ -4,10 +4,18 @@ set spell			" Enable spell check
 set spelllang=en		" Set spellcheck language
 set spellsuggest=best,9		" Show up to 9 spellcheck languages
 set noswapfile			" disable creating a swap file
+set nobackup       "no backup files
+set nowritebackup  "only in case you don't want a backup file while editing
 set mouse=a			" enable mouse click
 set clipboard=unnamedplus	" use system clipboard
 set nocompatible		" disable compatibility to old-time vi
 set backspace=indent,eol,start
+set shiftwidth=2
+set tabstop=2
+set numberwidth=4
+set signcolumn=yes
+set hlsearch
+set number
 
 " Autoinstall Plug
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
