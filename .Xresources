@@ -1,0 +1,4 @@
+! ===== xlock
+! actually turn the backlight off
+XLock.dpmsoff     : 1
+
