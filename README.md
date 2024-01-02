@@ -40,8 +40,15 @@ Note the Super key I am referring to is the Windows Key
 
 <b>Super + Mouse Button 1 (Left Click) -</b> Move/Drag Window (also brings window to front)<br>
 <b>Super + Mouse Button 3 (Right Click) -</b> Resize floating only windows<br>
+<b>Super + Left Arrow -</b> Split 2 windows vertically<br>
+<b>Super + Right Arrow -</b> Cycle between multiple windows<br>
 <b>Control + Super + R -</b> Restart CWM<br>
-<b>Control + Super + Q -</b> Quit CWM<br>
+<b>Control + Super + Q -</b> Lock CWM<br>
+<b>Shift + Super + Q -</b> Quit CWM<br>
+<b>Super + N -</b> Open NNN in home directory<br>
+<b>Shift + Super + D -</b> Open NNN in Desktop directory<br>
+<b>Shift + Super + L -</b> Open NNN in Downloads directory<br>
+<b>Shift + Super + O -</b> Open NNN in Documents directory<br>
 <b>Super + F -</b> Put app in Fullscreen and undo Fullscreen<br>
 <b>Super + Q -</b> Kill app<br>
 <b>Alt + Control + L -</b> Lock screen<br>
@@ -57,7 +64,7 @@ Note the Super key I am referring to is the Windows Key
 
 ## Extra dotfiles (Firefox Neovim and ksh)
 
-The neovim config is my own personal config which can be found here - https://github.com/dante-robinson/Neovim-config As for the Firefox config this is a pretty extreme user.js config with a bunch of extensions for added security. If you do use the .mozilla folder you will visit many sites that will not work without having javascript enabled and you will need to enable those sites to be allowed to run javascript through the noScript extension. For most websites they will have alot of javascript from many providers you don't need to enable them all usually for basic functionality. You can make sure the browser config is working correctly by visiting http://browserleaks.com and checking to make sure WebRTC, WebGL and stuff like that is all disabled javascript is enabled through noScript if you want to test those leaks. Location data will depend on your own DNS setup and both the Font and Canvas fingerprinting should be randomized on each refresh. I am using ksh on OpenBSD for the shell.
+The neovim config is my own personal config which can be found here - https://github.com/dante-robinson/Neovim-config As for the Firefox config this is a pretty extreme user.js config with a bunch of extensions for added security. If you do use the .mozilla folder you will visit many sites that will not work without having javascript enabled and you will need to enable those sites to be allowed to run javascript through the noScript extension. For most websites they will have alot of javascript from many providers you don't need to enable them all usually for basic functionality. You can make sure the browser config is working correctly by visiting http://browserleaks.com and checking to make sure WebRTC, WebGL and stuff like that is all disabled. Location data will depend on your own DNS setup and both the Font and Canvas fingerprinting should be randomized on each refresh. I am using ksh on OpenBSD for the shell.
 ## Additional stuff
 
 #### Alacritty: https://github.com/alacritty/alacritty
