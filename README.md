@@ -64,7 +64,7 @@ Note the Super key I am referring to is the Windows Key
 
 ## Extra dotfiles (Firefox Neovim and ksh)
 
-The neovim config is my own personal config which can be found here - https://github.com/dante-robinson/Neovim-config As for the Firefox config this is a pretty extreme user.js config with a bunch of extensions for added security. If you do use the .mozilla folder you will visit many sites that will not work without having javascript enabled and you will need to enable those sites to be allowed to run javascript through the noScript extension. For most websites they will have alot of javascript from many providers you don't need to enable them all usually for basic functionality. You can make sure the browser config is working correctly by visiting http://browserleaks.com and checking to make sure WebRTC, WebGL and stuff like that is all disabled. Location data will depend on your own DNS setup and both the Font and Canvas fingerprinting should be randomized on each refresh. I am using ksh on OpenBSD for the shell.
+You can find my own personal neovim config here - https://github.com/dante-robinson/Neovim-config As for the Firefox config this is a pretty extreme user.js config with a bunch of extensions for added security. If you do use the .mozilla folder you will visit many sites that will not work without having javascript enabled and you will need to enable those sites to be allowed to run javascript through the noScript extension. For most websites they will have alot of javascript from many providers you don't need to enable them all usually for basic functionality. You can make sure the browser config is working correctly by visiting http://browserleaks.com and checking to make sure WebRTC, WebGL and stuff like that is all disabled. Location data will depend on your own DNS setup and both the Font and Canvas fingerprinting should be randomized on each refresh. I am using ksh on OpenBSD for the shell.
 ## Additional stuff
 
 #### Alacritty: https://github.com/alacritty/alacritty
@@ -74,5 +74,7 @@ The neovim config is my own personal config which can be found here - https://gi
 #### dunst: https://github.com/dunst-project/dunst
 
 #### scrot: https://github.com/dreamer/scrot
+
+#### nnn: https://github.com/jarun/nnn 
 
 #### pyllyukko user.js template used: https://github.com/pyllyukko/user.js/
